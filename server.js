@@ -30,8 +30,8 @@ application.post('/register', (request, response) => {
     database.collection('data').insertOne(request.body);
 });
 
+// incorporating the build into the application
 application.use(express.static('frontend/build'));
-
 application.get('*', (request, response) => {
     response.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
 });
