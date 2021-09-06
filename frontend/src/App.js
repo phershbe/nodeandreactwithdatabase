@@ -15,7 +15,8 @@ function App() {
   const readPassword = (e) => {
     setPassword(e.target.value);
   };
-
+  
+  // Here is the function that we will use to actually post the input data when the user clicks
   const handleSubmit = async (e) => {
     e.preventDefault();
     const inputData = {
