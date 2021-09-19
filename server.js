@@ -12,6 +12,7 @@ const db = process.env.DATABASE_PASSWORD;
 
 const port = process.env.PORT || 8080;
 
+// connecting to the database here
 mongoose.connect(db)
     .then(console.log('Database connected'))
     .catch(error => console.log(error));
