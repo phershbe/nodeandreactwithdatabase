@@ -17,6 +17,7 @@ mongoose.connect(db)
     .then(console.log('Database connected'))
     .catch(error => console.log(error));
 
+// the variable for the actual database connection here
 const database = mongoose.connection;
 
 // routes are here
