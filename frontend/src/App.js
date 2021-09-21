@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
+  // setting variables
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [data, setData] = useState('Data goes here');
