@@ -3,12 +3,13 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  // setting variables
+  // Setting variables
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [data, setData] = useState('Data goes here');
   const [API, setAPI] = useState('Data from API goes here');
-
+  
+  // Setting the variables that we need to send
   const readUsername = (e) => {
     setUsername(e.target.value);
   };
